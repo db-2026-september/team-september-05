@@ -1,8 +1,8 @@
 # TEAMWORK - Topic 03 (Database Design)
 
 ## Склад команди
-- Команда: ...
-- Варіант предметної області: ...
+- Команда: Анна Даценко, Inna Petryshyn, Sofiia Voitkiv, Rostyslav Chukhnii
+- Варіант предметної області: Варіант 1 - Database “Library Management System”
 
 ## Таблиця внесків
 | Учасник          | Роль у команді | Що зроблено | Артефакти / файли |
