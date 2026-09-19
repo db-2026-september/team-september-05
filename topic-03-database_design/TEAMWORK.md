@@ -5,11 +5,11 @@
 - Варіант предметної області: ...
 
 ## Таблиця внесків
-| Учасник | Роль у команді | Що зроблено | Артефакти / файли |
-|Анна Даценко|Спікер|Таблиці|---|
-|Inna Petryshyn|Редактор|Таблиці| ... |
-|Sofiia Voitkiv|Дизайнер|таблиці| ... |
-|Rostyslav Chukhnii|Аналітик|Зв'язки| ... |
+| Учасник          | Роль у команді | Що зроблено | Артефакти / файли |
+|Анна Даценко      |Спікер          |Таблиці      | -                 |
+|Inna Petryshyn    |Редактор        |Таблиці      | -                 |
+|Sofiia Voitkiv    |Дизайнер        |таблиці      | -                 |
+|Rostyslav Chukhnii|Аналітик        |Зв'язки      | -                 |
 
 ## Контекст теми
 Таблиці Members, Reservation, Borrowings - Анна Даценко; Таблиці Books, Revies, BookCopies - Inna Petryshyn; Таблиці BookAuthors, Authors, BookCategories, Categories - Sofiia Voitkiv. Зв'язки між таблицями, визначення MVP та фінальної версії кольорами - Rostyslav Chukhnii.
