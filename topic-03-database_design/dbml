@@ -36,3 +36,88 @@
 
 
 // Вставте ваш DBML-код нижче 👇
+
+
+Members {
+	member_id int pk
+	member_name varchar
+	member_phone_number varchar
+	member_email varchar
+	@index ix_members_email (member_email) unique using btree
+}
+
+Books {
+	book_id int pk
+	book_title varchar
+	book_isbn varchar
+	publication_year int
+	@index ix_books_isbn (book_isbn) unique using btree
+	@index ix_books_title (book_title) using btree
+}
+
+Borrowings {
+	borrowing_id int pk
+	member_id int > Members.member_id
+	copy_id int > BookCopies.copy_id
+	borrowing_date date
+	due_date date
+	return_date date
+	@index ix_borrowings_member_id (member_id) using btree
+	@index ix_borrowings_copy_id (copy_id) using btree
+	@index ix_borrowings_due_date (due_date) using btree
+}
+
+Reviews {
+	review_id int pk
+	book_id int > Books.book_id
+	member_id int > Members.member_id
+	review_text varchar
+	rating int
+	@index ix_reviews_book_id (book_id) using btree
+	@index ix_reviews_member_id (member_id) using btree
+}
+
+Reservations {
+	reservation_id int pk
+	book_id int > Books.book_id
+	member_id int > Members.member_id
+	reservation_date date
+	reservation_status varchar
+	@index ix_reservations_book_id (book_id) using btree
+	@index ix_reservations_member_id (member_id) using btree
+}
+
+BookCopies {
+	copy_id int pk
+	book_id int > Books.book_id
+	copy_status varchar
+	@index ix_book_copies_book_id (book_id) using btree
+}
+
+Authors {
+	author_id int pk
+	author_name varchar
+	bio varchar
+	@index ix_authors_name (author_name) using btree
+}
+
+BookAuthors {
+	book_id int > Books.book_id
+	author_id int > Authors.author_id
+	@index ix_book_authors_book_id (book_id) using btree
+	@index ix_book_authors_author_id (author_id) using btree
+}
+
+Categories {
+	category_id int pk
+	category_name varchar
+	@index ix_categories_name (category_name) unique using btree
+}
+
+BooksCategories {
+	book_id int > Books.book_id
+	category_id int > Categories.category_id
+	@index ix_books_categories_book_id (book_id) using btree
+	@index ix_books_categories_category_id (category_id) using btree
+}
+
