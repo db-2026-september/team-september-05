@@ -37,6 +37,7 @@
 
 // Вставте ваш DBML-код нижче 👇
 
+//Посилання на діаграму: https://dbdesigner.page.link/r7hxeFNd9ZwFp5Gz7
 
 Members {
 	member_id int pk
