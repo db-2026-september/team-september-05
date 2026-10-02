@@ -1,7 +1,7 @@
 # TEAMWORK - Topic 04 (SQL DDL)
 
 ## Склад команди
-- Команда: ...
+- Команда: Анна Даценко, Inna Petryshyn, Sofiia Voitkiv, Rostyslav Chukhnii
 - Варіант предметної області: ...
 
 ## Таблиця внесків
