@@ -27,7 +27,6 @@
 
 -- Add your DDL below this line
 
---Tables creation - MVP tables + Borrowings table
 create table members (
     member_id int generated always as identity primary key,
     member_name varchar(255) not null,
