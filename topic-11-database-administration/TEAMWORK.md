@@ -1,7 +1,7 @@
 # TEAMWORK - Topic 11 (Database Administration)
 
 ## Склад команди
-- Команда: ...
+- Команда: Анна Даценко, Sofiia Voitkiv, Rostyslav Chukhnii, Inna Petryshyn
 - Варіант предметної області: ...
 
 ## Таблиця внесків
