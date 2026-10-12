@@ -53,3 +53,15 @@ CREATE USER sofiia_voitkiv WITH PASSWORD 'SecurePass456!';
 CREATE USER hanna_datsenko WITH PASSWORD 'StrongPass789!';
 CREATE USER rostyslav_chukhnii WITH PASSWORD 'StrongPass012!';
 
+ ==========================================
+-- 3. ПРИЗНАЧЕННЯ РОЛЕЙ КОРИСТУВАЧАМ
+-- ==========================================
+
+-- Додаємо користувачів до ролі readonly
+GRANT readonly_role TO inna_petryshyn;
+GRANT readonly_role TO sofiia_voitkiv;
+
+-- Додаємо користувачів до ролі readwrite
+GRANT readwrite_role TO hanna_datsenko;
+GRANT readwrite_role TO rostyslav_chukhnii;
+
