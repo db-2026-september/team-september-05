@@ -13,7 +13,7 @@
 | Inna Petryshyn |редактор | код запитів sql  | ... |
 
 ## Контекст теми
-Опишіть, хто відповідав за: horizontal/vertical views - Inna Petryshyn, mixed view/join-based view/subquery-based view - Анна Даценко, union-based view/layered view/updatable view with check option - Sofiia Voitkiv, `WITH CHECK OPTION`, а також demo-`SELECT` і структуру `views.sql`.
+Опишіть, хто відповідав за: horizontal/vertical views - Inna Petryshyn, join-based view/subquery-based view - Анна Даценко, union-based view/layered view - Sofiia Voitkiv, mixed view/updatable view with check option - Rostyslav Chukhnii, а також demo-`SELECT` і структуру `views.sql` - Rostyslav Chukhnii.
 
 ## Коротке обгрунтування командного підходу
 1. Як ви розподілили типи views між учасниками: Запити були розподілені за бажанням членів команди та по кількості
