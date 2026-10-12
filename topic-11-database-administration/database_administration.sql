@@ -31,4 +31,25 @@
 
 -- Add your script below this line
 
+- ==========================================
+-- 1. СТВОРЕННЯ РОЛЕЙ
+-- ==========================================
+
+-- Створюємо роль «Тільки читання»
+CREATE ROLE readonly_role;
+
+-- Створюємо роль «Читання та запис»
+CREATE ROLE readwrite_role;
+
+==========================================
+-- 2. СТВОРЕННЯ КОРИСТУВАЧІВ
+-- ==========================================
+
+-- Користувачі для читання
+CREATE USER inna_petryshyn WITH PASSWORD 'SecurePass123!';
+CREATE USER sofiia_voitkiv WITH PASSWORD 'SecurePass456!';
+
+-- Користувачі для читання та запису
+CREATE USER hanna_datsenko WITH PASSWORD 'StrongPass789!';
+CREATE USER rostyslav_chukhnii WITH PASSWORD 'StrongPass012!';
 
