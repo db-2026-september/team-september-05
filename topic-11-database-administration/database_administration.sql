@@ -65,3 +65,6 @@ GRANT readonly_role TO sofiia_voitkiv;
 GRANT readwrite_role TO hanna_datsenko;
 GRANT readwrite_role TO rostyslav_chukhnii;
 
+
+
+
