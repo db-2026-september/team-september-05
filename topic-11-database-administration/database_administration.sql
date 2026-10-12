@@ -65,6 +65,51 @@ GRANT readonly_role TO sofiia_voitkiv;
 GRANT readwrite_role TO hanna_datsenko;
 GRANT readwrite_role TO rostyslav_chukhnii;
 
+==========================================
+-- 4: ПРИЗНАЧЕННЯ ПРАВ
+-- ==========================================
+
+-- Базове підключення до БД та схеми для всіх користувачів
+GRANT CONNECT ON DATABASE Library_Management_System TO inna_petryshyn, sofiia_voitkiv;
+GRANT CONNECT ON DATABASE Library_Management_System TO hanna_datsenko, rostyslav_chukhnii;
+
+GRANT USAGE ON SCHEMA public TO  inna_petryshyn, sofiia_voitkiv;
+GRANT USAGE ON SCHEMA public TO hanna_datsenko, rostyslav_chukhnii;
+
+-- ------------------------------------------
+-- ГРУПА 1: Виконавець 1 (Працює з 3 таблицями)
+-- Таблиці: books, book_copies, reviews
+-- ------------------------------------------
+
+-- Права для Writer 1 (Читання та коригування 3 таблиць)
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE books, book_copies, reviews TO rostyslav_chukhnii;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO rostyslav_chukhnii; -- для автоінкременту ID
+
+-- Права для Reader 1 (Тільки перегляд цих 3 таблиць)
+GRANT SELECT ON TABLE books, book_copies, reviews TO inna_petryshyn;
 
 
+-- ------------------------------------------
+-- ГРУПА 2: Виконавець 2 (Працює з 3 таблицями)
+-- Таблиці: borrowings, reservations, members
+-- ------------------------------------------
+
+-- Права для Writer 2 (Читання та коригування)
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE borrowings, reservations, members TO hanna_datsenko;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO hanna_datsenko;
+
+-- Права для Reader 2 (Тільки перегляд)
+GRANT SELECT ON TABLE borrowings, reservations, members TO sofiia_voitkiv;
+
+ ------------------------------------------
+-- ГРУПА 3: Виконавець 3 (Працює з 4 таблицями)
+-- Таблиці: authors, book_authors, books_categories, categories
+-- ------------------------------------------
+
+-- Права для Writer 3 (Читання та коригування)
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE authors, book_authors, books_categories, categories TO hanna_datsenko;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public TO hanna_datsenko;
+
+-- Права для Reader 3 (Тільки перегляд)
+GRANT SELECT ON TABLE authors, book_authors, books_categories, categories TO sofiia_voitkiv;
 
